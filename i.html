@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spell Checker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Spell Checker</h1>
+    
+    <div class="input-container">
+      <div class="input-group">
+        <label for="reference-text">Reference Text</label>
+        <textarea id="reference-text" placeholder="Enter the reference text here...">My point is that the deficit on the revenue account would be of the order of about Rs. nineteen crores. But let me point out that I do not agree with those of my friends in the Finance Department who suggest that Rs. nine or eighteen crores which are obtained from Pakistan should be put to the revenue side. They are to be put on the capital side. But that does not seriously alter the trend of my argument.</textarea>
+      </div>
+      
+      <div class="input-group">
+        <label for="typed-text">Your Typed Text</label>
+        <textarea id="typed-text" placeholder="Type here to check your spelling...">My point is that the deficit on the revenue account would be of the order of about Rs. nineteen crores. But let me point out that I do not agree with those of my friendps in the Finance Department who suggest that Rs. nine or eighteen crores which are obtained from Pakistan should be put to the revenue side. They are to be put on the capital side. But that does not seriously alter the trend of my argument.</textarea>
+      </div>
+    </div>
+    
+    <button id="check-button">Check Spelling</button>
+    
+    <div class="result-container">
+      <h2>Comparison Result</h2>
+      <div id="result-display" class="result-text"></div>
+    </div>
+    
+    <div class="legend">
+      <h3>Legend:</h3>
+      <div class="legend-items">
+        <div class="legend-item">
+          <span class="color-box correct"></span>
+          <span>Correct</span>
+        </div>
+        <div class="legend-item">
+          <span class="color-box misspelled"></span>
+          <span>Misspelled</span>
+        </div>
+        <div class="legend-item">
+          <span class="color-box missing"></span>
+          <span>Missing</span>
+        </div>
+        <div class="legend-item">
+          <span class="color-box extra"></span>
+          <span>Extra</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="spell-checker.js"></script>
+</body>
+</html>
